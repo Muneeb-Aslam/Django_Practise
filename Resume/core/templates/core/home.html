@@ -1,17 +1,27 @@
-<!DOCTYPE html>
-{% load static%}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="{% static  'core/CSS/bootstrap.css' %}">
-</head>
-<body>
+{% extends 'core/base.html' %}
+{% load static %}
+{%  block content %}
+<div class=" mt-5 ">
+    <div class="text-center">
+        <img src="{% static 'core/images/self.jpg' %}" alt="image-profile" class="img-thumbnail text-center" width="200px" height="150px">
+    </div>
+<div class="mt-5 text-white">
+    <h3 class="font-weight-bold">
+        Hello 
+    </h3>
+    <div>
+       <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, vitae deserunt ipsum fugit, cum praesentium harum veritatis, iusto libero molestiae maiores quod! Ducimus quo sequi aspernatur? Consequatur tempora fugit explicabo.
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita similique aliquam doloremque maiores? Harum, dicta, dignissimos doloribus quae id doloremque perspiciatis fugit laborum, ullam amet sunt eum error ipsa dolor!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusantium officiis, unde voluptates, expedita iusto rem labore laudantium, vel repellat ab quisquam officia ullam illum maiores? Similique laborum qui nostrum, laudantium, beatae repellendus ex veniam facere vero perferendis dignissimos fugit officiis distinctio provident minima aperiam temporibus commodi quidem nulla recusandae totam delectus. Assumenda, ipsum repellendus ab minima soluta beatae tempore eum labore iusto error. Harum, non laboriosam? Atque voluptate eius ipsa totam minus rem quaerat molestias? Necessitatibus blanditiis aperiam quis quas, dicta voluptas voluptatum qui est facere at dolores minus labore beatae asperiores nemo ipsum tempora! Deserunt eligendi ducimus reprehenderit.
+       </p> 
+    </div>
+</div>
+<div class="text-center">
+    <a href="" class="btn btn-warning my-3 mr-10">Hrie Me</a>
+    <a href="" class="btn btn-info my-3">Contact</a>
+</div>
 
-</body>
-<script src="{% static 'core/JS/bootstrap.js'%}"></script>
-<script src="{% static 'core/JS/popper.js'%}"></script>
-<script src="{% static 'core/JS/jquery.js'%}"></script>
-</html>
+
+</div>
+{% endblock content %}
